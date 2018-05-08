@@ -4,7 +4,7 @@
   "start_url": "/",
   "display": "standalone",
   ​​"orientation": "portrait",
-  "background_color": "#f8f8ff",
+  "background_color": "#f8f8f8",
   "description": "En app för Akademiska hus - Sveriges största fastighetsbolag för universitet & högskola.",
   "icons": [{
     "src": "images/touch/homescreen48.png",
