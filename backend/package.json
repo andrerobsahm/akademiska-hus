@@ -12,8 +12,6 @@
     "dependencies": {
         "cross-env": "^5.1.4",
         "laravel-mix": "^2.1.11",
-        "npm": "^6.0.0",
-        "react": "^16.3.2",
-        "react-dom": "^16.3.2"
+        "npm": "^6.0.0"
     }
 }
