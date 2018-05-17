@@ -1,0 +1,13 @@
+.gradient-background {
+    height: 1284px;
+    width: 1284px;
+    position: fixed;
+    z-index: -1;
+
+    background: radial-gradient(
+        circle,
+        rgba(212, 103, 139, 1) 0%,
+        rgba(89, 83, 155, 1) 100%
+    );
+    /* box-shadow: inset 101px 9px 52px 0 rgba(236, 0, 140, 1); */
+}

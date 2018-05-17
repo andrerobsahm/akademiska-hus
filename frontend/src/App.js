@@ -3,6 +3,7 @@ import "./App.css";
 
 import Header from "./Components/Header";
 import Button from "./Components/Button";
+import GradientBackground from "./Components/GradientBackground";
 
 class App extends Component {
     constructor() {
@@ -38,6 +39,7 @@ class App extends Component {
         });
         return (
             <div className="App">
+                <GradientBackground />
                 <Header />
                 <h3>Nyheter om ditt campus:</h3>
                 {posts}
