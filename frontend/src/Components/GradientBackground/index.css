@@ -1,7 +1,7 @@
 .gradient-background {
     height: 1284px;
     width: 1284px;
-    position: fixed;
+    position: absolute;
     z-index: -1;
 
     background: radial-gradient(

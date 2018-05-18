@@ -4,3 +4,30 @@ body {
     padding: 0;
     font-family: sans-serif;
 }
+
+/* brödtext */
+@font-face {
+    font-family: "ChronicleTextG1-Roman";
+    src: local("ChronicleTextG1-Roman.otf"),
+        url(./fonts/ChronicleTextG1-Roman.otf) format("otf");
+}
+
+/* rubriker */
+@font-face {
+    font-family: "ChronicleDispCond-Light";
+    src: local("ChronicleDispCond-Light.otf"),
+        url(./fonts/ChronicleDispCond-Light.otf) format("otf");
+}
+
+h1,
+h2,
+h3 {
+    font-family: ChronicleDispCond-Light;
+    text-align: center;
+}
+
+p,
+a,
+strong {
+    font-family: ChronicleTextG1-Roman;
+}

@@ -39,12 +39,15 @@ class App extends Component {
         });
         return (
             <div className="App">
-                <GradientBackground />
                 <Header />
-                <h3>Nyheter om ditt campus:</h3>
-                {posts}
-                <Button title={"Logga in"} />
-                <Button title={"Gäst"} />
+                <GradientBackground />
+                <div className="main-content">
+                    <h1>Välkommen till Akademiska Hus nya app!</h1>
+                    <Button title={"Logga in"} />
+                    <Button title={"Gäst"} />
+
+                    {posts}
+                </div>
             </div>
         );
     }
