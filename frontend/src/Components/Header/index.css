@@ -14,8 +14,7 @@
 
 .header-title {
     font-size: 1.2em;
-    color: #000;
-    margin-left: 1%;
+    margin-left: 2%;
     text-transform: uppercase;
-    font-family: "SceneAH-Medium";
+    color: #000;
 }

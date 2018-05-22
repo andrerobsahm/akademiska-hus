@@ -1,9 +1,5 @@
 .gradient-background {
-<<<<<<< HEAD
-    height: 1284px;
-=======
     height: 100vh;
->>>>>>> master
     width: 100vw;
     position: absolute;
     z-index: -1;
