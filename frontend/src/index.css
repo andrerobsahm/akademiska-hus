@@ -5,6 +5,10 @@ body {
     font-family: sans-serif;
 }
 
+h7 {
+  display: none;
+}
+
 /* brödtext */
 @font-face {
     font-family: "ChronicleTextG1-Roman";
