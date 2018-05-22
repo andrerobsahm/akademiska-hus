@@ -1,36 +1,58 @@
 import React, { Component } from "react";
-import PropTypes from 'prop-types';
 import "./App.css";
 
-// Import some react-redux packages
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-
-// import SplashScreen & IndexPage
-import SplashScreenPage from './SplashScreenPage';
-import IndexPage from './IndexPage';
-
-import { Switch, Route, Link } from 'react-router-dom';
-
-// import Header from "./Components/Header";
-// import Button from "./Components/Button";
-// import GradientBackground from "./Components/GradientBackground";
+import Header from "./Components/Header";
+import Button from "./Components/Button";
+import GradientBackground from "./Components/GradientBackground";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/SplashScreenPage">SplashScreenPage</Link></li>
-        </ul>
-        <Switch>
-          <Route exact path='/' component={IndexPage}/>
-          <Route path='/SplashScreenPage' component={SplashScreenPage}/>
-        </Switch>
-      </div>
-    );
-  }
+    constructor() {
+        super();
+        this.state = {
+            posts: []
+        };
+    }
+    componentDidMount() {
+        let endpointURL = "http://localhost:8888/wp-json/wp/v2/";
+        let postsURL = endpointURL + "posts";
+
+        fetch(postsURL)
+            .then(response => response.json())
+            .then(response => {
+                this.setState({
+                    posts: response
+                });
+            });
+    }
+    render() {
+        let posts = this.state.posts.map((post, index) => {
+            return (
+                <div key={index}>
+                    <strong>{post.title.rendered}</strong>
+                    <p
+                        dangerouslySetInnerHTML={{
+                            __html: post.content.rendered
+                        }}
+                    />
+                </div>
+            );
+        });
+        return (
+            <div className="App">
+                <Header />
+                <GradientBackground />
+                <div className="main-content">
+                    <h1>Välkommen till Akademiska Hus nya app!</h1>
+                    <Button title={"Logga in"} />
+                    <Button title={"Gäst"} />
+                    <a>Glömt lösenord</a>
+                    <a>Skapa konto</a>
+
+                    {posts}
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;
