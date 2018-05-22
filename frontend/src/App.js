@@ -7,8 +7,8 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 // import SplashScreen & IndexPage
-import SplashScreenPage from './SplashScreenPage';
-import IndexPage from './IndexPage';
+import SplashScreenPage from './pages/SplashScreenPage';
+import IndexPage from './pages/IndexPage';
 
 import { Switch, Route, Link } from 'react-router-dom';
 

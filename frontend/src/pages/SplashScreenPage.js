@@ -6,14 +6,14 @@ import LoadingBar from 'react-redux-loading-bar';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import { fetchPhotos } from './reducers/photos';
-import { calculatePi } from './reducers/pi';
+import { fetchPhotos } from '../reducers/photos';
+import { calculatePi } from '../reducers/pi';
 
-import Photos from './Components/Photos';
-import Pi from './Components/Pi';
-import GradientBackground from './Components/GradientBackground';
+import Photos from '../Components/Photos';
+import Pi from '../Components/Pi';
+import GradientBackground from '../Components/GradientBackground';
 
-import "./Components/SplashScreen/Splash.css";
+import "../Components/SplashScreen/Splash.css";
 
 const SplashScreensssss = ({ handleCalculatePi, pi }) => (
   <header>
