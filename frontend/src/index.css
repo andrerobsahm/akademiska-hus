@@ -5,33 +5,50 @@ body {
     font-family: sans-serif;
 }
 
+<<<<<<< HEAD
 h7 {
   display: none;
 }
 
 /* brödtext */
+=======
+/* rubriker */
+>>>>>>> androb
 @font-face {
     font-family: "ChronicleTextG1-Roman";
     src: local("ChronicleTextG1-Roman.otf"),
         url(./fonts/ChronicleTextG1-Roman.otf) format("otf");
 }
 
-/* rubriker */
+/* brödtext */
 @font-face {
-    font-family: "ChronicleDispCond-Light";
-    src: local("ChronicleDispCond-Light.otf"),
-        url(./fonts/ChronicleDispCond-Light.otf) format("otf");
+    font-family: "SceneAH-Medium";
+    src: local("SceneAH-Medium.otf"),
+        url(./fonts/SceneAH-Medium.otf) format("otf");
 }
 
-h1,
-h2,
-h3 {
-    font-family: ChronicleDispCond-Light;
+/* inputs */
+@font-face {
+    font-family: "SceneAH-Light";
+    src: local("SceneAH-Light.otf"),
+        url(./fonts/SceneAH-Light.otf) format("otf");
+}
+
+h1 {
+    font-family: "ChronicleTextG1-Roman";
     text-align: center;
+    font-size: 35px;
+    color: #fff;
+    font-weight: initial;
 }
 
 p,
 a,
 strong {
-    font-family: ChronicleTextG1-Roman;
+    font-family: "SceneAH-Medium";
+    font-size: 16px;
+}
+
+input {
+    font-family: "SceneAH-Light";
 }

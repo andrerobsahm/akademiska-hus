@@ -4,10 +4,11 @@
     position: absolute;
     z-index: -1;
 
-    background: radial-gradient(
+    /* background: radial-gradient(
         circle,
         rgba(212, 103, 139, 1) 0%,
         rgba(89, 83, 155, 1) 100%
-    );
+    ); */
+    background: linear-gradient(#8c5a94, #cf658b);
     /* box-shadow: inset 101px 9px 52px 0 rgba(236, 0, 140, 1); */
 }

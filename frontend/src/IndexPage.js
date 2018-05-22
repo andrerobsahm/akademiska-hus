@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 import Header from "./Components/Header";
 import Button from "./Components/Button";
@@ -40,13 +40,14 @@ class IndexPage extends Component {
         return (
             <div className="App">
                 <Header />
-                <GradientBackground />
                 <div className="main-content">
+                    <GradientBackground />
                     <h1>Välkommen till Akademiska Hus nya app!</h1>
-                    <Button title={"Logga in"} />
-                    <Button title={"Gäst"} />
-                    {posts}
+                    <p>Kunskapsmiljöer för universitet och högskolor.</p>
                 </div>
+                {posts}
+                <Button title={"Logga in"} />
+                <Button title={"Gäst"} />
             </div>
         );
     }
