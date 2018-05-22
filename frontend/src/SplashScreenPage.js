@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-// import '/App.css';
+import LoadingBar from 'react-redux-loading-bar';
 
 // Import some react-redux packages
 import { connect } from 'react-redux';
@@ -9,9 +9,28 @@ import { bindActionCreators } from 'redux';
 import { fetchPhotos } from './reducers/photos';
 import { calculatePi } from './reducers/pi';
 
-import SplashScreen from './Components/SplashScreen';
 import Photos from './Components/Photos';
 import Pi from './Components/Pi';
+import GradientBackground from './Components/GradientBackground';
+
+import "./Components/SplashScreen/Splash.css";
+
+const SplashScreensssss = ({ handleCalculatePi, pi }) => (
+  <header>
+    <div className="Logo">
+      <img onload={handleCalculatePi} src="Logo_SplashScreen.svg" id="trigger-loading-bar" width="50%"></img>
+    </div>
+    <div className="LoadingBAR">
+      <div className="LoadingBar-background"></div>
+      <LoadingBar className="LoadingBar" showFastActions />
+    </div>
+  </header>
+)
+
+SplashScreensssss.propTypes = {
+  pi: PropTypes.number.isRequired,
+  handleCalculatePi: PropTypes.func.isRequired,
+}
 
 class SplashScreenPage extends Component {
 
@@ -31,19 +50,20 @@ class SplashScreenPage extends Component {
 
   render () {
     return (
-      <div className="SplashScreen">
-        <SplashScreen />
-        <main className="p3 mx-auto">
-          <Photos
-            photos={this.props.photos}
-            handleFetchPhotos={this.boundHandleFetchPhotos}
-          />
-          <Pi
-            pi={this.props.pi}
-            handleCalculatePi={this.boundHandleCalculatePi}
-          />
-        </main>
-      </div>
+        <div className="SplashScreen">
+        <GradientBackground />
+          <main className="p3 mx-auto">
+            <Photos
+              photos={this.props.photos}
+              handleFetchPhotos={this.boundHandleFetchPhotos}
+            />
+            <Pi
+              pi={this.props.pi}
+              handleCalculatePi={this.boundHandleCalculatePi}
+            />
+            <SplashScreensssss />
+          </main>
+        </div>
     )
   }
 }

@@ -12,10 +12,6 @@ const Pi = ({ handleCalculatePi, pi }) => (
   </div>
 )
 
-// componentDidMount() {
-//   handleCalculatePi()
-// }
-
 Pi.propTypes = {
   pi: PropTypes.number.isRequired,
   handleCalculatePi: PropTypes.func.isRequired,
