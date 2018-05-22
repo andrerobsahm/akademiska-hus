@@ -5,19 +5,19 @@ import Header from "../Components/Header";
 import Button from "../Components/Button";
 import GradientBackground from "../Components/GradientBackground";
 
-class FindCampus extends Component {
+class ChosenCampus extends Component {
   render() {
   return (
       <div className="App">
       <GradientBackground />
           <Header />
           <div className="main-content">
-          <h1>Välj campus</h1>
-          <p>Följande campus finns i närheten av dig:</p>
+          <h1>Namn på vald campus</h1>
+          <p>Namn på campus-området</p>
           </div>
       </div>
     );
   }
 }
 
-export default FindCampus;
+export default ChosenCampus;

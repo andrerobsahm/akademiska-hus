@@ -12,8 +12,8 @@ class FindCampus extends Component {
       <GradientBackground />
           <Header />
           <div className="main-content">
-          <h1>Välj campus</h1>
-          <p>Följande campus finns i närheten av dig:</p>
+          <h1>Aktuellt</h1>
+          <p>På "Campus ....."</p>
           </div>
       </div>
     );
