@@ -18,7 +18,7 @@ import "./Components/SplashScreen/Splash.css";
 const SplashScreensssss = ({ handleCalculatePi, pi }) => (
   <header>
     <div className="Logo">
-      <img onload={handleCalculatePi} src="Logo_SplashScreen.svg" id="trigger-loading-bar" width="50%"></img>
+      <img onClick={handleCalculatePi} src="Logo_SplashScreen.svg" id="trigger-loading-bar" width="50%"></img>
     </div>
     <div className="LoadingBAR">
       <div className="LoadingBar-background"></div>
