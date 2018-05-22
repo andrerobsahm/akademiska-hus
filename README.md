@@ -3,7 +3,7 @@
 <img src="https://media.giphy.com/media/RkLfdfhNq2gsbfUa01/giphy.gif" width="100%">
 
 ## Akademiska Hus
-More info to be added... 
+More info to be added...
 
 ## Authors
 <a href="https://github.com/besv16">Beatrice Svensson</a>,
