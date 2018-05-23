@@ -9,6 +9,7 @@ import { bindActionCreators } from 'redux';
 // import SplashScreen & IndexPage
 import SplashScreenPage from './pages/SplashScreenPage';
 import IndexPage from './pages/IndexPage';
+import Felanmalan from './pages/Felanmalan';
 
 import { Switch, Route, Link } from 'react-router-dom';
 
@@ -23,10 +24,12 @@ class App extends Component {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/SplashScreenPage">SplashScreenPage</Link></li>
+          <li><Link to="/Felanmalan">Felanmalan</Link></li>
         </ul>
         <Switch>
           <Route exact path='/' component={IndexPage}/>
           <Route path='/SplashScreenPage' component={SplashScreenPage}/>
+          <Route path='/Felanmalan' component={Felanmalan}/>
         </Switch>
       </div>
     );
