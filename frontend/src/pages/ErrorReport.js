@@ -4,7 +4,7 @@ import GradientBackground from "../Components/GradientBackground";
 import Form from "../Components/Form";
 
 
-class Felanmalan extends Component{
+class ErrorReport extends Component{
     render() {
         return (
             <div>
@@ -23,4 +23,4 @@ class Felanmalan extends Component{
     }
 }
 
-export default Felanmalan;
+export default ErrorReport;
