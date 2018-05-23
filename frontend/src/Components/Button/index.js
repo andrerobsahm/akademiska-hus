@@ -4,7 +4,12 @@ import "./index.css";
 
 const Button = props => (
     <a href="{props.link}">
-        <button className="button">{props.title}</button>
+        <button className="button">
+            <span>
+                <img src="{props.icon}" alt=""/>
+            </span>
+            {props.title}
+        </button>
     </a>
 );
 

@@ -7,11 +7,17 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
 // import SplashScreen & IndexPage
+<<<<<<< HEAD
 import SplashScreen from './pages/SplashScreen';
 import Index from './pages/Index';
 import FindCampus from './pages/FindCampus';
 import CurrentlyOnCampus from './pages/CurrentlyOnCampus';
 import ChosenCampus from './pages/ChosenCampus';
+=======
+import SplashScreenPage from './pages/SplashScreenPage';
+import IndexPage from './pages/IndexPage';
+import Felanmalan from './pages/Felanmalan';
+>>>>>>> androb
 
 import { Switch, Route, Link } from 'react-router-dom';
 
@@ -25,6 +31,7 @@ class App extends Component {
       <div className="App">
         <ul>
           <li><Link to="/">Home</Link></li>
+<<<<<<< HEAD
           <li><Link to="/SplashScreen">SplashScreen</Link></li>
           <li><Link to="/FindCampus">FindCampus</Link></li>
           <li><Link to="/CurrentlyOnCampus">CurrentlyOnCampus</Link></li>
@@ -36,6 +43,15 @@ class App extends Component {
           <Route path='/FindCampus' component={FindCampus}/>
           <Route path='/CurrentlyOnCampus' component={CurrentlyOnCampus}/>
           <Route path='/ChosenCampus' component={ChosenCampus}/>
+=======
+          <li><Link to="/SplashScreenPage">SplashScreenPage</Link></li>
+          <li><Link to="/Felanmalan">Felanmalan</Link></li>
+        </ul>
+        <Switch>
+          <Route exact path='/' component={IndexPage}/>
+          <Route path='/SplashScreenPage' component={SplashScreenPage}/>
+          <Route path='/Felanmalan' component={Felanmalan}/>
+>>>>>>> androb
         </Switch>
       </div>
     );
