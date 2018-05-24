@@ -12,6 +12,7 @@ import Index from './pages/Index';
 import FindCampus from './pages/FindCampus/FindCampus';
 import CurrentlyOnCampus from './pages/CurrentlyOnCampus';
 import ChosenCampus from './pages/ChosenCampus';
+import ErrorReport from './pages/ErrorReport';
 
 import { Switch, Route, Link } from 'react-router-dom';
 
@@ -29,6 +30,7 @@ class App extends Component {
           <li><Link to="/FindCampus/FindCampus">FindCampus</Link></li>
           <li><Link to="/CurrentlyOnCampus">CurrentlyOnCampus</Link></li>
           <li><Link to="/ChosenCampus">ChosenCampus</Link></li>
+          <li><Link to="/ErrorReport">ErrorReport</Link></li>
         </ul>
         <Switch>
           <Route exact path='/' component={Index}/>
@@ -36,6 +38,7 @@ class App extends Component {
           <Route path='/FindCampus/FindCampus' component={FindCampus}/>
           <Route path='/CurrentlyOnCampus' component={CurrentlyOnCampus}/>
           <Route path='/ChosenCampus' component={ChosenCampus}/>
+          <Route path='/ErrorReport' component={ErrorReport}/>
         </Switch>
       </div>
     );

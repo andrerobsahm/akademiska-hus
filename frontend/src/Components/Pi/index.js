@@ -5,7 +5,7 @@ const Pi = ({ handleCalculatePi, pi }) => (
   <div>
     <button
       onClick={handleCalculatePi}
-      className="btn btn-primary"
+      className="button"
     >
       Calculate π
     </button>
@@ -17,4 +17,4 @@ Pi.propTypes = {
   handleCalculatePi: PropTypes.func.isRequired,
 }
 
-export default Pi
+export default Pi;
