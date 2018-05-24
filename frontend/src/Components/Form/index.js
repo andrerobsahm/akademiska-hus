@@ -23,8 +23,10 @@ const Form = () => (
             </select>
             <br/>
             <textarea rows="6" placeholder="Beskriv skadan kort..."></textarea>
-                <label htmlFor="imageUpload">lägg till bild (frivilligt)</label>
+            <label htmlFor="imageUpload">lägg till bild (frivilligt)
                 <input className="imageUpload" type="file" id="imageUpload" accept="image/*" />
+            </label>
+
             <p>Vill du följa ärendet?</p>
             <input type="email" name="email" placeholder="E-postadress" />
             <input type="tel" name="phone" placeholder="Telefonnummer" />

@@ -4,6 +4,12 @@ body {
     padding: 0;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
 /* rubriker */
 @font-face {
     font-family: ChronicleTextG1-Roman;
@@ -24,7 +30,7 @@ body {
 
 h1 {
     font-family: ChronicleTextG1-Roman;
-    font-size: 35px;
+    font-size: 45px;
     color: #fff;
     font-weight: initial;
 }
