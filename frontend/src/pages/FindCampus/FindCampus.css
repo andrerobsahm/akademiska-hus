@@ -1,0 +1,9 @@
+.campus-container {
+  height: 367px;
+  padding-bottom: 40px;
+}
+
+.campus-container img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}

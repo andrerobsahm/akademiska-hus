@@ -5,7 +5,7 @@ declare(strict_types=1);
 // Register plugin helpers.
 require template_path('includes/plugins/plate.php');
 
-// Register "Aktuellt på campus" custom post type.
+// Register "campus" custom post type.
 require get_template_directory().'/post-types/campus.php';
 
 // Set theme defaults.

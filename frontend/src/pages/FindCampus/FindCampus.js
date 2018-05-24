@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import Header from "../Components/Header";
-import Button from "../Components/Button";
-import GradientBackground from "../Components/GradientBackground";
+import Header from "../../Components/Header";
+import Button from "../../Components/Button";
+import GradientBackground from "../../Components/GradientBackground";
+
+import "./FindCampus.css";
 
 class FindCampus extends Component {
     constructor() {
@@ -25,26 +27,23 @@ class FindCampus extends Component {
             });
     }
     render() {
-        let posts = this.state.posts.map((post) => {
+        let posts = this.state.posts.map((post, id) => {
             return (
-                <div>
-                    <strong>{post.title.rendered}</strong>
-                <p
-                    dangerouslySetInnerHTML={{
-                        __html: post.content.rendered.Byggnad
-                    }}
-                />
+                <div className="campus-container" key={post.id}>
+                  <img src={post.acf.bild}></img>
+                  <strong>{post.title.rendered}</strong>
                 </div>
             );
         });
         return (
             <div className="App">
-                <Header />
-                <div className="main-content">
-                </div>
-                {posts}
-                <Button title={"Logga in"} />
-                <Button title={"Gäst"} />
+              <Header />
+              <GradientBackground />
+              <div className="main-content">
+              <h1>Välj campus</h1>
+              <p>Följande campus finns i närheten av dig:</p>
+              {posts}
+              </div>
             </div>
         );
     }
