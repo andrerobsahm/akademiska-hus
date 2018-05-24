@@ -8,6 +8,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 5%;
+    position: absolute;
+    top: 30%;
 }
 
 /* rubriker */

@@ -1,6 +1,14 @@
-import React from "react";
+import React, {Component} from "react";
 import "./index.css";
 
-const GradientBackground = () => <div className="gradient-background" />;
+function GradientBackground (props) {
+  return (
+        <div
+          className='gradient-background-image'
+          style={{ backgroundImage: `url(${props.backgroundImage})` }} >
+          <div className='gradient-overlay'></div>
+    </div>
+  );
+}
 
 export default GradientBackground;
