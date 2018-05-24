@@ -8,9 +8,6 @@ require template_path('includes/plugins/plate.php');
 // Register "campus" custom post type.
 require get_template_directory().'/post-types/campus.php';
 
-// Register location taxonomy for the employee custom post type.
-require get_template_directory().'/taxonomies/location.php';
-
 // Set theme defaults.
 add_action('after_setup_theme', function () {
     // Disable the admin toolbar.

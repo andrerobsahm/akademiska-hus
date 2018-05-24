@@ -9,7 +9,7 @@ import { bindActionCreators } from 'redux';
 // import SplashScreen & IndexPage
 import SplashScreen from './pages/SplashScreen';
 import Index from './pages/Index';
-import FindCampus from './pages/FindCampus';
+import FindCampus from './pages/FindCampus/FindCampus';
 import CurrentlyOnCampus from './pages/CurrentlyOnCampus';
 import ChosenCampus from './pages/ChosenCampus';
 
@@ -26,14 +26,14 @@ class App extends Component {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/SplashScreen">SplashScreen</Link></li>
-          <li><Link to="/FindCampus">FindCampus</Link></li>
+          <li><Link to="/FindCampus/FindCampus">FindCampus</Link></li>
           <li><Link to="/CurrentlyOnCampus">CurrentlyOnCampus</Link></li>
           <li><Link to="/ChosenCampus">ChosenCampus</Link></li>
         </ul>
         <Switch>
           <Route exact path='/' component={Index}/>
           <Route path='/SplashScreen' component={SplashScreen}/>
-          <Route path='/FindCampus' component={FindCampus}/>
+          <Route path='/FindCampus/FindCampus' component={FindCampus}/>
           <Route path='/CurrentlyOnCampus' component={CurrentlyOnCampus}/>
           <Route path='/ChosenCampus' component={ChosenCampus}/>
         </Switch>
