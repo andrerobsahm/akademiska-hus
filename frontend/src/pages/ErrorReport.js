@@ -9,14 +9,14 @@ class ErrorReport extends Component{
         return (
             <div>
                 <Header />
+                <GradientBackground />
                 <div className="main-content">
-                    <GradientBackground />
                     <h1>Felanmälan</h1>
                     <p>Din förvalda plats:</p>
-                </div>
-                <div>
-                    <p>Beskriv felet</p>
-                    <Form />
+                    <div>
+                        <p>Beskriv felet</p>
+                        <Form />
+                    </div>
                 </div>
             </div>
         );

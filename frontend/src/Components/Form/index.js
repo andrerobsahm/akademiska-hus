@@ -6,26 +6,39 @@ const Form = () => (
     <div className="">
         <form action="" method="post" encType="multipart/form-data">
             <select>
-                <option value="all" defaultValue="selected">Typ av skada</option>
+                <option className="input-span" value="" disabled="disabled" selected="selected">Typ av skada</option>
                 <option value="Vattenskada">Vattenskada</option>
                 <option value="Trasig lampa">Trasig lampa</option>
             </select>
+
             <select>
-                <option value="all" defaultValue="selected">Specificera</option>
+                <option className="input-span" value="" disabled="disabled" selected="selected">Specificera skada</option>
                 <option value="X">X</option>
                 <option value="XX">XX</option>
             </select>
+
             <select>
-                <option value="all" defaultValue="selected">Plats</option>
+                <option className="input-span" value="" disabled="disabled" selected="selected">Plats</option>
                 <option value="Våning1">Våning 1</option>
                 <option value="Våning2">Våning 2</option>
                 <option value="Våning3">Våning 3</option>
             </select>
+
+            <select>
+                <option className="input-span" value="" disabled="disabled" selected="selected">Rum / Område</option>
+                <option value="Våning1">Rum 408A</option>
+                <option value="Våning2">Rum 408B</option>
+                <option value="Våning3">Rum 408C</option>
+            </select>
+
             <br/>
-            <textarea rows="6" placeholder="Beskriv skadan kort..."></textarea>
-            <label htmlFor="imageUpload">lägg till bild (frivilligt)
-                <input className="imageUpload" type="file" id="imageUpload" accept="image/*" />
-            </label>
+
+            <textarea rows="7" placeholder="Beskriv skadan kort..."></textarea>
+
+            <br/>
+
+            <label className="imageUpload-label" htmlFor="imageUpload"><span className="input-span">Lägg till bild (frivilligt)</span></label>
+            <input className="imageUpload" type="file" id="imageUpload" accept="image/*" />
 
             <p>Vill du följa ärendet?</p>
             <input type="email" name="email" placeholder="E-postadress" />

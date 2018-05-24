@@ -5,7 +5,7 @@ form {
 }
 label, input, select, textarea {
 	height: 44px;
-	width: 90%;
+	width: 100%;
 	border-radius: 35px;
 	background-color: rgba(255,255,255,1);
     border: none;
@@ -14,13 +14,22 @@ label, input, select, textarea {
 }
 
 textarea {
+    box-sizing: border-box;
     height:auto;
+    padding: 5%;
 }
 
-input::placeholder, textarea::placeholder {
-    padding:3%;
+input::placeholder,
+.input-span {
+    padding-left:3%;
+    margin-left: 3%;
 }
 
 .imageUpload {
     display: none;
+}
+.imageUpload-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

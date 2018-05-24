@@ -5,7 +5,15 @@
 .index-header {
     font-size: 35px;
     text-align: center;
-    letter-spacing: 5;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+}
+
+.index-sub-header {
+    font-family: SceneAH-Light;
+    font-size: 16px;
+    text-align: center;
+    width: 65%;
 }
 
 .index-link-box {

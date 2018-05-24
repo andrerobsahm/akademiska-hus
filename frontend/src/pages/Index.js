@@ -13,7 +13,7 @@ class IndexPage extends Component {
                 <GradientBackground />
                 <div className="main-content index">
                     <h1 className="index-header">Välkommen till Akademiska hus app!</h1>
-                    <p>Kunskapsmiljöer för universitet och högskolor.</p>
+                    <h2 className="index-sub-header">Kunskapsmiljöer för universitet och högskolor.</h2>
                     <Button title={"Logga in"} />
                     <Button title={"Gästinloggning"} />
 
