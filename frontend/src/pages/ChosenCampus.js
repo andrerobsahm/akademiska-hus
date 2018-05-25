@@ -9,8 +9,8 @@ class ChosenCampus extends Component {
   render() {
   return (
       <div className="App">
-      <GradientBackground />
           <Header />
+          <GradientBackground />
           <div className="main-content">
           <h1>Namn på vald campus</h1>
           <p>Namn på campus-området</p>

@@ -1,40 +1,3 @@
-<<<<<<< HEAD
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-label, input, select, textarea {
-	height: 44px;
-	width: 100%;
-	border-radius: 35px;
-	background-color: rgba(255,255,255,1);
-    border: none;
-    outline: none;
-    margin: 1% 0;
-}
-
-textarea {
-    box-sizing: border-box;
-    height:auto;
-    padding: 5%;
-}
-
-input::placeholder,
-.input-span {
-    padding-left:3%;
-    margin-left: 3%;
-}
-
-.imageUpload {
-    display: none;
-}
-.imageUpload-label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-=======
 form {
     display: flex;
     flex-direction: column;
@@ -88,4 +51,3 @@ input[type=text] {
 .button{
     /* width: 100px; */
 }
->>>>>>> androb
