@@ -8,6 +8,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 5%;
+    position: absolute;
+    top: 30%;
 }
 
 /* rubriker */
@@ -28,7 +30,8 @@ body {
     src: url(./fonts/SceneAH-Light.otf);
 }
 
-h1 {
+h1,
+h2 {
     font-family: ChronicleTextG1-Roman;
     font-size: 45px;
     color: #fff;

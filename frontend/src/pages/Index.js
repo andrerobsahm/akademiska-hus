@@ -1,19 +1,23 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 
 import Header from "../Components/Header";
 import Button from "../Components/Button";
 import GradientBackground from "../Components/GradientBackground";
+import BackgroundImage from '../images/aula-medica.jpg'; // Path to BackgroundImage
+
 
 class IndexPage extends Component {
     render() {
         return (
             <div>
                 <Header />
-                <GradientBackground />
+
+                <GradientBackground
+                    backgroundImage={BackgroundImage} />
+
                 <div className="main-content index">
                     <h1 className="index-header">Välkommen till Akademiska hus app!</h1>
-                    <p>Kunskapsmiljöer för universitet och högskolor.</p>
+                    <h2 className="index-sub-header">Kunskapsmiljöer för universitet och högskolor.</h2>
                     <Button title={"Logga in"} />
                     <Button title={"Gästinloggning"} />
 

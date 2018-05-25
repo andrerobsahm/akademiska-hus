@@ -1,11 +1,20 @@
 .index {
     align-items: center;
+    top: 50%;
 }
 
 .index-header {
     font-size: 35px;
     text-align: center;
-    letter-spacing: 5;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+}
+
+.index-sub-header {
+    font-family: SceneAH-Light;
+    font-size: 16px;
+    text-align: center;
+    width: 65%;
 }
 
 .index-link-box {
@@ -14,21 +23,7 @@
 }
 
 .index-link {
-    /* font-family: SceneAH-Medium; */
     font-size: 12px;
     color: rgba(89, 83, 155, 1);
     margin: 0 5px;
 }
-
-/*
-.background {
-    height: 1284px;
-    width: 1284px;
-    transform: rotate(-180deg);
-    background: radial-gradient(
-        circle,
-        rgba(212, 103, 139, 1) 0%,
-        rgba(89, 83, 155, 1) 100%
-    );
-    box-shadow: inset 101px 9px 52px 0 rgba(236, 0, 140, 1);
-} */
