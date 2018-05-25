@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Header from "../Components/Header";
 import Button from "../Components/Button";
 import GradientBackground from "../Components/GradientBackground";
+import BackgroundImage from '../images/medicinare.jpg'; // Path to BackgroundImage
 
 class FindCampus extends Component {
     constructor() {
@@ -41,7 +42,9 @@ class FindCampus extends Component {
   return (
       <div className="App">
           <Header />
-          <GradientBackground />
+          <GradientBackground
+              backgroundImage={BackgroundImage}
+              />
           <div className="main-content">
           <h1>Aktuellt</h1>
               {posts}

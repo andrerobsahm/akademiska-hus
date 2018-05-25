@@ -4,8 +4,6 @@ import GradientBackground from "../Components/GradientBackground";
 import Form from "../Components/Form";
 import BackgroundImage from '../images/arkitekter.jpg'; // Path to BackgroundImage
 
-
-
 class ErrorReport extends Component{
     render() {
         return (
