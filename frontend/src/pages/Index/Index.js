@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-import Header from "../Components/Header";
-import Button from "../Components/Button";
-import GradientBackground from "../Components/GradientBackground";
-import BackgroundImage from '../images/aula-medica.jpg'; // Path to BackgroundImage
-
+import Header from "../../Components/Header";
+import Button from "../../Components/Button";
+import GradientBackground from "../../Components/GradientBackground";
+import BackgroundImage from '../../images/aula-medica.jpg'; // Path to BackgroundImage
+import './Index.css';
 
 class IndexPage extends Component {
     render() {
