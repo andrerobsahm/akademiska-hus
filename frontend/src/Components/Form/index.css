@@ -2,9 +2,10 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90vw;
 }
 label, input, select, textarea {
-	height: 44px;
+	height: 45px;
 	width: 100%;
 	border-radius: 35px;
 	background-color: rgba(255,255,255,1);
@@ -17,12 +18,21 @@ textarea {
     box-sizing: border-box;
     height:auto;
     padding: 5%;
+    caret-color: #8c5a94;
 }
 
 input::placeholder,
-.input-span {
+.input-span
+ {
     padding-left:3%;
     margin-left: 3%;
+}
+input:focus, textarea:focus {
+    background-color: #f8f8ff;
+    caret-color: #8c5a94;
+}
+input[type=text] {
+    padding-left: 10px;
 }
 
 .imageUpload {
@@ -32,4 +42,12 @@ input::placeholder,
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* .button-box {
+    display: flex;
+    justify-content: space-between;
+} */
+.button{
+    /* width: 100px; */
 }

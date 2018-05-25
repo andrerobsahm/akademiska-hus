@@ -32,7 +32,7 @@ body {
 
 h1,
 h2 {
-    font-family: ChronicleTextG1-Roman;
+    font-family: ChronicleTextG1-Roman, serif;
     font-size: 45px;
     color: #fff;
     font-weight: initial;
@@ -40,7 +40,7 @@ h2 {
 
 p,
 strong {
-    font-family: SceneAH-Medium;
+    font-family: SceneAH-Medium, sans-serif;
     font-size: 16px;
     color: #fff;
 }
@@ -50,6 +50,6 @@ textarea,
 select,
 option,
 label  {
-    font-family: SceneAH-Light;
+    font-family: SceneAH-Light, sans-serif;
     font-size: 16px;
 }

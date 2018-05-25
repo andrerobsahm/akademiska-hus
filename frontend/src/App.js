@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
-import "./App.css";
 
 // Import some react-redux packages
 import { connect } from 'react-redux';
@@ -8,7 +7,7 @@ import { bindActionCreators } from 'redux';
 
 // import SplashScreen & IndexPage
 import SplashScreen from './pages/SplashScreen';
-import Index from './pages/Index';
+import Index from './pages/Index/Index';
 import FindCampus from './pages/FindCampus/FindCampus';
 import CurrentlyOnCampus from './pages/CurrentlyOnCampus';
 import ChosenCampus from './pages/ChosenCampus';

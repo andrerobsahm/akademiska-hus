@@ -3,7 +3,7 @@ import Button from "../Button";
 import "./index.css";
 
 const Form = () => (
-    <div className="">
+    <div className="form">
         <form action="" method="post" encType="multipart/form-data">
             <select>
                 <option className="input-span" value="" disabled="disabled" selected="selected">Typ av skada</option>
@@ -40,12 +40,12 @@ const Form = () => (
             <label className="imageUpload-label" htmlFor="imageUpload"><span className="input-span">Lägg till bild (frivilligt)</span></label>
             <input className="imageUpload" type="file" id="imageUpload" accept="image/*" />
 
-            <p>Vill du följa ärendet?</p>
-            <input type="email" name="email" placeholder="E-postadress" />
-            <input type="tel" name="phone" placeholder="Telefonnummer" />
-
-            <Button className="button" title="Skicka in" type="submit" />
+            <p>Vill du följa ärendet?</p><input type="checkbox" name="" value="" />
+            <input className="input-span" type="text" name="email" placeholder="E-postadress" />
+            <input className="input-span" type="text" name="phone" placeholder="Telefonnummer" />
+            <Button className="button" title="Skicka in &rarr;" type="submit" />
         </form>
+        <Button className="button" title="&larr;" />
     </div>
 );
 
