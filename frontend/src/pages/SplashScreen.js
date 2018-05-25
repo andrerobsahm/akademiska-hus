@@ -15,7 +15,7 @@ import GradientBackground from '../Components/GradientBackground';
 
 import "../Components/SplashScreen/Splash.css";
 
-const SplashScreensssss = ({ handleCalculatePi, pi }) => (
+const SplashScreen = ({ handleCalculatePi, pi }) => (
   <header>
     <div className="Logo">
       <img onClick={handleCalculatePi} src="Logo_SplashScreen.svg" id="trigger-loading-bar" width="50%"></img>
@@ -27,7 +27,7 @@ const SplashScreensssss = ({ handleCalculatePi, pi }) => (
   </header>
 )
 
-SplashScreensssss.propTypes = {
+SplashScreen.propTypes = {
   pi: PropTypes.number.isRequired,
   handleCalculatePi: PropTypes.func.isRequired,
 }
@@ -52,7 +52,9 @@ class SplashScreenPage extends Component {
     return (
         <div className="SplashScreen">
         <GradientBackground />
+        <div className="main-content">
           <main className="p3 mx-auto">
+            <SplashScreen />
             <Photos
               photos={this.props.photos}
               handleFetchPhotos={this.boundHandleFetchPhotos}
@@ -61,8 +63,8 @@ class SplashScreenPage extends Component {
               pi={this.props.pi}
               handleCalculatePi={this.boundHandleCalculatePi}
             />
-            <SplashScreensssss />
           </main>
+          </div>
         </div>
     )
   }

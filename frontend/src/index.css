@@ -30,6 +30,10 @@ body {
     src: url(./fonts/SceneAH-Light.otf);
 }
 
+h1 {
+  margin-bottom: 7px;
+}
+
 h1,
 h2 {
     font-family: ChronicleTextG1-Roman, serif;

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Switch, Route, Link } from 'react-router-dom';
 
 import Header from "../../Components/Header";
 import Button from "../../Components/Button";
@@ -31,7 +32,10 @@ class FindCampus extends Component {
             return (
                 <div className="campus-container" key={post.id}>
                   <img src={post.acf.bild}></img>
+                  <div className="campus-name-arrow">
                   <strong>{post.title.rendered}</strong>
+                  <div className="arrow"><Link to="/ChosenCampus">></Link></div>
+                  </div>
                 </div>
             );
         });
@@ -40,9 +44,12 @@ class FindCampus extends Component {
               <Header />
               <GradientBackground />
               <div className="main-content">
-              <h1>Välj campus</h1>
-              <p>Följande campus finns i närheten av dig:</p>
+              <h1>Välj Campus</h1>
+              <div className="campuses-nearby">
+                <p>Följande campus finns i närheten av dig:</p>
+              </div>
               {posts}
+              <img src="/../images/left-arrow.svg" alt="Go back"></img>
               </div>
             </div>
         );
