@@ -16,14 +16,14 @@
 }
 
 .campus-name-arrow {
-  padding-left: 14px;
+  padding-left: 17px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   height: 60px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  width: 322px;
+  width: 319px;
   background-color: #fff;
   color: #59539b;
 }
@@ -33,20 +33,44 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 69%;
+  width: 67%;
   color: #59539b;
 }
 
 .campus-name-arrow .arrow {
-  width: 36%;
+  width: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.campus-name-arrow .arrow img {
+  width: 11pt;
+  height: 19pt;
 }
 
 .campus-name-arrow .arrow a {
   font-family: SceneAH-Medium;
   font-size: 40px;
   text-decoration: none;
+}
+
+.go-back {
+  margin: 0 auto;
+  width: 58px;
+  height: 47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 3px solid #59539B;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.go-back img {
+  width: ;
+  height: ;
 }

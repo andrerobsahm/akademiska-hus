@@ -18,7 +18,7 @@ import "../Components/SplashScreen/Splash.css";
 const SplashScreen = ({ handleCalculatePi, pi }) => (
   <header>
     <div className="Logo">
-      <img onClick={handleCalculatePi} src="Logo_SplashScreen.svg" id="trigger-loading-bar" width="50%"></img>
+      <img onClick={handleCalculatePi} src="Logo_SplashScreen.svg" id="trigger-loading-bar" width="50%" alt="Logga"></img>
     </div>
     <div className="LoadingBAR">
       <div className="LoadingBar-background"></div>
@@ -51,7 +51,7 @@ class SplashScreenPage extends Component {
   render () {
     return (
         <div className="SplashScreen">
-        <GradientBackground />
+        <GradientBackground bbrradius={'0px 0px'} bblradius={'0px 0px'}/>
         <div className="main-content">
           <main className="p3 mx-auto">
             <SplashScreen />

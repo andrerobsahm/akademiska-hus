@@ -10,7 +10,7 @@ import SplashScreen from './pages/SplashScreen';
 import Index from './pages/Index/Index';
 import FindCampus from './pages/FindCampus/FindCampus';
 import CurrentlyOnCampus from './pages/CurrentlyOnCampus';
-import ChosenCampus from './pages/ChosenCampus';
+import ChosenCampus from './pages/ChosenCampus/ChosenCampus';
 import ErrorReport from './pages/ErrorReport';
 
 import { Switch, Route, Link } from 'react-router-dom';

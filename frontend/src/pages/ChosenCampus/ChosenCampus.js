@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import Header from "../Components/Header";
-import Button from "../Components/Button";
-import GradientBackground from "../Components/GradientBackground";
-import BackgroundImage from '../images/arkitekter.jpg'; // Path to BackgroundImage
+import Header from "../../Components/Header";
+import Button from "../../Components/Button";
+import GradientBackground from "../../Components/GradientBackground";
+import BackgroundImage from '../../images/arkitekter.jpg'; // Path to BackgroundImage
 
 
 class ChosenCampus extends Component {

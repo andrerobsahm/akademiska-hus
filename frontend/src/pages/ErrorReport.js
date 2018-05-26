@@ -10,6 +10,7 @@ class ErrorReport extends Component{
             <div>
                 <Header />
                 <GradientBackground
+                    height={'148vh'}
                     backgroundImage={BackgroundImage}
                     />
                 <div className="main-content">

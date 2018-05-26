@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Switch, Route, Link } from 'react-router-dom';
+// import { Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Header from "../../Components/Header";
 import Button from "../../Components/Button";
@@ -31,10 +32,14 @@ class FindCampus extends Component {
         let posts = this.state.posts.map((post, id) => {
             return (
                 <div className="campus-container" key={post.id}>
-                  <img src={post.acf.bild}></img>
+                  <img src={post.acf.bild} alt="Bild på campus"></img>
                   <div className="campus-name-arrow">
                   <strong>{post.title.rendered}</strong>
-                  <div className="arrow"><Link to="/ChosenCampus">></Link></div>
+                  <div className="arrow">
+                    <Link to="/ChosenCampus">
+                      <img src="../right-arrow.svg" alt="Visa campus"></img>
+                    </Link>
+                  </div>
                   </div>
                 </div>
             );
@@ -42,14 +47,18 @@ class FindCampus extends Component {
         return (
             <div className="App">
               <Header />
-              <GradientBackground />
+              <GradientBackground height={'132vh'}/>
               <div className="main-content">
               <h1>Välj Campus</h1>
               <div className="campuses-nearby">
                 <p>Följande campus finns i närheten av dig:</p>
               </div>
               {posts}
-              <img src="/../images/left-arrow.svg" alt="Go back"></img>
+              <Link to="/">
+                <div className="go-back">
+                  <img src="../left-arrow.svg" alt="Gå tillbaka"></img>
+                </div>
+              </Link>
               </div>
             </div>
         );

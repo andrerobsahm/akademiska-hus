@@ -5,8 +5,8 @@ function GradientBackground (props) {
   return (
         <div
           className='gradient-background-image'
-          style={{ backgroundImage: `url(${props.backgroundImage})` }} >
-          <div className='gradient-overlay'></div>
+          style={{ backgroundImage: `url(${props.backgroundImage})`, borderBottomLeftRadius: props.bblradius, borderBottomRightRadius: props.bbrradius }} >
+          <div className='gradient-overlay' style={{ height: props.height, borderBottomLeftRadius: props.bblradius, borderBottomRightRadius: props.bbrradius }}></div>
     </div>
   );
 }
