@@ -16,12 +16,12 @@ class App extends Component {
     return (
       <div className="App">
         <Switch>
-          <Route exact path='/' component={Index}/>
-          <Route path='/SplashScreen' component={SplashScreen}/>
-          <Route path='/FindCampus/FindCampus' component={FindCampus}/>
+          <Route exact path='/' component={SplashScreen}/>
+          <Route path='/Index' component={Index}/>
+          <Route path='/FindCampus' component={FindCampus}/>
           <Route path='/CurrentlyOnCampus' component={CurrentlyOnCampus}/>
-          <Route path='/ChosenCampus' component={ChosenCampus}/>
           <Route path='/ErrorReport' component={ErrorReport}/>
+          <Route name="ChosenCampus" path="/:id" component={ChosenCampus} />
         </Switch>
       </div>
     );

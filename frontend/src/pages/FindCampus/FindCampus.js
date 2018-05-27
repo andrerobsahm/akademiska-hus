@@ -36,7 +36,7 @@ class FindCampus extends Component {
                   <div className="campus-name-arrow">
                   <strong>{post.title.rendered}</strong>
                   <div className="arrow">
-                    <Link to="/ChosenCampus">
+                    <Link to="ChosenCampus" params={{ id: post.id }}>
                       <img src="../right-arrow.svg" alt="Visa campus"></img>
                     </Link>
                   </div>
@@ -47,7 +47,7 @@ class FindCampus extends Component {
         return (
             <div className="App">
               <Header />
-              <GradientBackground height={'132vh'}/>
+              <GradientBackground height={'129vh'}/>
               <div className="main-content">
               <h1>Välj Campus</h1>
               <div className="campuses-nearby">

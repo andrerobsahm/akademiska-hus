@@ -37,7 +37,7 @@ export default class SplashScreen extends Component {
           </div>
         </div>
         :
-        <Redirect to='/'/>
+        <Redirect to='/Index'/>
       )
 }
 }

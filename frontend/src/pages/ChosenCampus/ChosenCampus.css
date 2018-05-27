@@ -1,0 +1,30 @@
+.option-container div {
+}
+
+.option-container p {
+  font-family: SceneAH-Light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 67%;
+  color: #59539b;
+}
+
+.option-container .arrow {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.option-container .arrow img {
+  width: 11pt;
+  height: 19pt;
+}
+
+.option-container .arrow a {
+  font-family: SceneAH-Medium;
+  font-size: 40px;
+  text-decoration: none;
+}
