@@ -28,6 +28,7 @@
               "type:wordpress-muplugin",
               "wpackagist-plugin/advanced-custom-fields",
               "wpackagist-plugin/acf-to-rest-api",
+              "wordplate/acf",
               "wordplate/plate"
             ],
             "public/plugins/{$name}": ["type:wordpress-plugin"],
