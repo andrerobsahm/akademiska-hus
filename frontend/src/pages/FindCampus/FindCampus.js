@@ -36,7 +36,7 @@ class FindCampus extends Component {
                   <div className="campus-name-arrow">
                   <strong>{post.title.rendered}</strong>
                   <div className="arrow">
-                    <Link to="ChosenCampus" params={{ id: post.id }}>
+                    <Link to="ChosenCampus">
                       <img src="../right-arrow.svg" alt="Visa campus"></img>
                     </Link>
                   </div>

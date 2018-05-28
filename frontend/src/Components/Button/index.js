@@ -3,12 +3,15 @@ import "./index.css";
 // import logo from "./logo.svg";
 
 const Button = props => (
-    <a href="{props.link}">
+    <a href={props.link}>
         <button className="button">
             <span>
-                <img src="{props.icon}" alt=""/>
+              <div className="icon-title">
+                <img src={props.icon} alt=""/>
+                <p className="button-title">{props.title}</p>
+              </div>
+                <img src={props.arrowimg} alt=""/>
             </span>
-            {props.title}
         </button>
     </a>
 );

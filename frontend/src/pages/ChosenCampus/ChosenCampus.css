@@ -1,4 +1,32 @@
-.option-container div {
+.chosen-campus-container {
+  width: 90vw;
+  height: 112vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chosen-campus-meta-container {
+  width: 78vw;
+  height: 120px;
+}
+
+.chosen-campus-meta-container h1 {
+  margin: 0;
+}
+
+.option-container {
+  height: 508px;
+}
+
+.chosen-campus-meta {
+  width: 180px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .option-container p {

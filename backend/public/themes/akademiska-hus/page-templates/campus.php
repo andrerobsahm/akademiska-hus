@@ -23,7 +23,7 @@
 <?php if (count($schools)): ?>
     <div class="row">
         <div class="col">
-            <h2 class="h5">Employees</h2>
+            <h2 class="h5">Campus</h2>
             <ul>
                 <?php foreach ($schools as $school): ?>
                     <li>
