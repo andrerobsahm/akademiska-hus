@@ -18,8 +18,8 @@ class IndexPage extends Component {
                 <div className="main-content index">
                     <h1 className="index-header">Välkommen till Akademiska hus app!</h1>
                     <h2 className="index-sub-header">Kunskapsmiljöer för universitet och högskolor.</h2>
-                    <Button title={"Logga in"} />
-                    <Button title={"Gästinloggning"} />
+                    <Button title="Logga in" />
+                    <Button title="Gästinloggning" />
 
                     <div className="index-link-box">
                         <p><a className="index-link">Glömt Lösenord</a></p>
