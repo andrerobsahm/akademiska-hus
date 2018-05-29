@@ -37,13 +37,19 @@ h1 {
 h1,
 h2 {
     font-family: ChronicleTextG1-Roman, serif;
-    font-size: 45px;
     color: #fff;
     font-weight: initial;
 }
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 25px;
+}
 
 p,
-strong {
+strong,
+a {
     font-family: SceneAH-Medium, sans-serif;
     font-size: 16px;
     color: #fff;
