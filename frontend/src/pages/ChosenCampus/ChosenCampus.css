@@ -1,6 +1,6 @@
 .chosen-campus-container {
   width: 90vw;
-  height: 112vh;
+  height: 107vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,13 +30,14 @@
 }
 
 .option-container p {
-  font-family: SceneAH-Light;
+  font-family: SceneAH-Medium;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 67%;
   color: #59539b;
 }
+
 
 .option-container .arrow {
   width: 15%;
@@ -55,4 +56,20 @@
   font-family: SceneAH-Medium;
   font-size: 40px;
   text-decoration: none;
+}
+
+.change-campus {
+  height: 193px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.change-campus p {
+  font-family: SceneAH-Light;
+  width: 168px;
+  color: #fff;
+  text-decoration: underline;
 }

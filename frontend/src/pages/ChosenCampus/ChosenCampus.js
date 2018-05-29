@@ -64,6 +64,11 @@ class ChosenCampus extends Component {
                   <div>
                     <Button title="Kontaktinfo" icon="../information.svg" link="/ContactInfo" arrowimg="../right-arrow.svg"/>
                   </div>
+                  <div className="change-campus">
+                  <Link to="/FindCampus">
+                    <p>Ändra förvald campus</p>
+                  </Link>
+                  </div>
                 </div>
               </div>
           </div>

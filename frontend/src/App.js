@@ -7,6 +7,7 @@ import Index from './pages/Index/Index';
 import FindCampus from './pages/FindCampus/FindCampus';
 import CurrentlyOnCampus from './pages/CurrentlyOnCampus/CurrentlyOnCampus';
 import ChosenCampus from './pages/ChosenCampus/ChosenCampus';
+import BuildingInfo from './pages/BuildingInfo/BuildingInfo';
 import ErrorReport from './pages/ErrorReport';
 
 import { Switch, Route } from 'react-router-dom';
@@ -21,7 +22,8 @@ class App extends Component {
           <Route path='/FindCampus' component={FindCampus}/>
           <Route path='/CurrentlyOnCampus' component={CurrentlyOnCampus}/>
           <Route path='/ErrorReport' component={ErrorReport}/>
-          <Route name="ChosenCampus" path="/:id" component={ChosenCampus} />
+          <Route path="/ChosenCampus" component={ChosenCampus} />
+          <Route path="/BuildingInfo" component={BuildingInfo} />
         </Switch>
       </div>
     );

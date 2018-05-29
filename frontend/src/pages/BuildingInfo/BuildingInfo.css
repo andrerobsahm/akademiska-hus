@@ -1,0 +1,13 @@
+.image-container {
+  height: 336px;
+  padding-top: 9px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.image-container img {
+  width: 336px;
+  border-radius: 20px;
+}
