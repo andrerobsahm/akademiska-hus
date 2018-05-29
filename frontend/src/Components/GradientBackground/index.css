@@ -1,0 +1,15 @@
+.gradient-overlay {
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.8;
+    background: linear-gradient(#8c5a94, #cf658b);
+    border-bottom-left-radius: 100% 60px;
+    border-bottom-right-radius: 100% 60px;
+}
+
+.gradient-background-image {
+    border-bottom-left-radius: 100% 60px;
+    border-bottom-right-radius: 100% 60px;
+    background-size: cover;
+}

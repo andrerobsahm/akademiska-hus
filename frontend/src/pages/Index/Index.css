@@ -1,6 +1,12 @@
 .index {
     align-items: center;
-    top: 30%;
+    top: 25%;
+}
+.index-button-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40%;
 }
 
 .index-header {
