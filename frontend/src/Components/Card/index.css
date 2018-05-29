@@ -6,6 +6,15 @@
   margin-bottom: 10px;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.currentlyon-campus-container .card-container .currentlyon-boxes-container:nth-child(2) p:nth-child(1) {
+  display: none;
+}
+
 .card span .icon-text {
   display: flex;
   flex-direction: row;
@@ -15,7 +24,8 @@
 }
 
 p.card-text {
+  font-family: SceneAH-Light;
   width: 210px;
-  color: #59539b;
+  color: #000;
   text-align: left;
 }

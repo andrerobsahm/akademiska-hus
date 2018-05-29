@@ -3,15 +3,12 @@
 declare(strict_types=1);
 
 $fields = [
-  acf_select([
-    'label' => 'Status',
-    'name' => 'status',
+  acf_true_false([
+    'label' => 'Finished',
+    'name' => 'finished',
     'instructions' => '',
     'required' => true,
-    'choices' => [
-      'Running',
-      'Finished',
-    ],
+    'default' => false,
   ]),
   acf_file([
     'label' => 'Image',
