@@ -47,10 +47,8 @@ input[type=text] {
     justify-content: center;
 }
 
-/* .button-box {
-    display: flex;
-    justify-content: space-between;
-} */
-.button{
-    /* width: 100px; */
+.camera{
+    width: 26px;
+    margin-right: 10%;
+    float: right;
 }

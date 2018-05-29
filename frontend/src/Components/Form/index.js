@@ -6,25 +6,25 @@ const Form = () => (
     <div className="form">
         <form action="" method="post" encType="multipart/form-data">
             <select>
-                <option className="input-span" value="" disabled="disabled" selected="selected">Typ av skada</option>
+                <option className="input-span" value="" selected disabled hidden>Typ av skada</option>
                 <option value="Vattenskada">Vattenskada</option>
             </select>
 
             <select>
-                <option className="input-span" value="" disabled="disabled" selected="selected">Specificera skada</option>
+                <option className="input-span" value="" selected disabled hidden>Specificera skada</option>
                 <option value="tak">Vattenläcka från tak</option>
                 <option value="fönster">Vattenläcka från fönster</option>
             </select>
 
             <select>
-                <option className="input-span" value="" disabled="disabled" selected="selected">Plats</option>
+                <option className="input-span" value="" selected disabled hidden>Plats</option>
                 <option value="Våning1">Våning 1</option>
                 <option value="Våning2">Våning 2</option>
                 <option value="Våning3">Våning 3</option>
             </select>
 
             <select>
-                <option className="input-span" value="" disabled="disabled" selected="selected">Rum / Område</option>
+                <option className="input-span" value="" selected disabled hidden>Rum / Område</option>
                 <option value="rum408a">Rum 408A</option>
                 <option value="rum408b">Rum 408B</option>
                 <option value="rum408c">Rum 408C</option>
@@ -37,7 +37,10 @@ const Form = () => (
 
             <br/>
 
-            <label className="imageUpload-label" htmlFor="imageUpload"><span className="input-span">Lägg till bild (frivilligt)</span></label>
+            <label className="imageUpload-label" htmlFor="imageUpload">
+                <span className="input-span">Lägg till bild (frivilligt)<img className="camera" alt="camera" src="/camera.svg" /></span>
+
+            </label>
             <input className="imageUpload" type="file" id="imageUpload" accept="image/*" />
 
             <p>Vill du följa ärendet?</p>
