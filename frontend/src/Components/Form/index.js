@@ -8,13 +8,12 @@ const Form = () => (
             <select>
                 <option className="input-span" value="" disabled="disabled" selected="selected">Typ av skada</option>
                 <option value="Vattenskada">Vattenskada</option>
-                <option value="Trasig lampa">Trasig lampa</option>
             </select>
 
             <select>
                 <option className="input-span" value="" disabled="disabled" selected="selected">Specificera skada</option>
-                <option value="X">X</option>
-                <option value="XX">XX</option>
+                <option value="tak">Vattenläcka från tak</option>
+                <option value="fönster">Vattenläcka från fönster</option>
             </select>
 
             <select>
@@ -26,9 +25,10 @@ const Form = () => (
 
             <select>
                 <option className="input-span" value="" disabled="disabled" selected="selected">Rum / Område</option>
-                <option value="Våning1">Rum 408A</option>
-                <option value="Våning2">Rum 408B</option>
-                <option value="Våning3">Rum 408C</option>
+                <option value="rum408a">Rum 408A</option>
+                <option value="rum408b">Rum 408B</option>
+                <option value="rum408c">Rum 408C</option>
+                <option value="toalett">Toalett</option>
             </select>
 
             <br/>
@@ -40,12 +40,11 @@ const Form = () => (
             <label className="imageUpload-label" htmlFor="imageUpload"><span className="input-span">Lägg till bild (frivilligt)</span></label>
             <input className="imageUpload" type="file" id="imageUpload" accept="image/*" />
 
-            <p>Vill du följa ärendet?</p><input type="checkbox" name="" value="" />
+            <p>Vill du följa ärendet?</p>
             <input className="input-span" type="text" name="email" placeholder="E-postadress" />
             <input className="input-span" type="text" name="phone" placeholder="Telefonnummer" />
             <Button className="button" title="Skicka in &rarr;" type="submit" />
         </form>
-        <Button className="button" title="&larr;" />
     </div>
 );
 

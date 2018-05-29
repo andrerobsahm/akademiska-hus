@@ -7,7 +7,7 @@ import Index from './pages/Index/Index';
 import FindCampus from './pages/FindCampus/FindCampus';
 import CurrentlyOnCampus from './pages/CurrentlyOnCampus/CurrentlyOnCampus';
 import ChosenCampus from './pages/ChosenCampus/ChosenCampus';
-import ErrorReport from './pages/ErrorReport';
+import ErrorReport from './pages/ErrorReport/ErrorReport';
 
 import { Switch, Route } from 'react-router-dom';
 
