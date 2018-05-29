@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-// import SplashScreen & IndexPage
 import SplashScreen from './pages/SplashScreen/SplashScreen';
 import Index from './pages/Index/Index';
 import FindCampus from './pages/FindCampus/FindCampus';
