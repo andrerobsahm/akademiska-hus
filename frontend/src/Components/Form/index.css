@@ -27,6 +27,9 @@ input::placeholder,
     padding-left:3%;
     margin-left: 3%;
 }
+select {
+    padding: 0 3%;
+}
 input:focus, textarea:focus {
     background-color: #f8f8ff;
     caret-color: #8c5a94;
