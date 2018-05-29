@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 // import { Switch, Route, Link } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+// import Button from "../../Components/Button";
 
+import { Link } from 'react-router-dom';
 import Header from "../../Components/Header";
-import Button from "../../Components/Button";
 import GradientBackground from "../../Components/GradientBackground";
 
 import "./FindCampus.css";

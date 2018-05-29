@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { Link } from 'react-router-dom';
 
 import Header from "../../Components/Header";
 import Button from "../../Components/Button";
 import Card from "../../Components/Card";
 import GradientBackground from "../../Components/GradientBackground";
-import BackgroundImage from '../../images/medicinare.jpg'; // Path to BackgroundImage
+import BackgroundImage from '../../images/medicinare.jpg';
 import "./CurrentlyOnCampus.css";
 
 class CurrentlyOnCampus extends Component {
@@ -41,7 +41,7 @@ class CurrentlyOnCampus extends Component {
     }
     render() {
       let posts = this.state.posts.map((post) => {
-        if (post.id == 19) {
+        if (post.id === 19) {
           return (
             <div className="currentlyon-campus-meta-container" key={post.id}>
               <h1>Aktuellt</h1>
@@ -57,7 +57,7 @@ class CurrentlyOnCampus extends Component {
         });
 
         let cards = this.state.cards.map((card) => {
-          if (card.acf.finished == true) {
+          if (card.acf.finished === true) {
           return (
             <div className="currentlyon-boxes-container" key={card.id}>
             <p>Avslutade idag</p>

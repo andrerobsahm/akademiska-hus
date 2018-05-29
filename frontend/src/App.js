@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from 'prop-types';
 
 // import SplashScreen & IndexPage
 import SplashScreen from './pages/SplashScreen/SplashScreen';

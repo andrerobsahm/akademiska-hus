@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import { Link } from 'react-router-dom';
 
 import Header from "../../Components/Header";
 import Button from "../../Components/Button";
 import GradientBackground from "../../Components/GradientBackground";
-import BackgroundImage from '../../images/arkitekter.jpg'; // Path to BackgroundImage
+import BackgroundImage from '../../images/arkitekter.jpg';
 import "./ChosenCampus.css";
 
 class ChosenCampus extends Component {
@@ -29,7 +29,7 @@ class ChosenCampus extends Component {
   }
   render() {
       let posts = this.state.posts.map((post) => {
-        if (post.id == 19) {
+        if (post.id === 19) {
           return (
             <div className="chosen-campus-meta-container" key={post.id}>
               <h1>{post.title.rendered.slice(7, 15)}</h1>

@@ -4,7 +4,7 @@ import "./index.css";
 
 const Form = () => (
     <div className="form">
-        <form action="" method="post" encType="multipart/form-data">
+        <form action="/" method="post" encType="multipart/form-data">
             <select>
                 <option className="input-span" value="" selected disabled hidden>Typ av skada</option>
                 <option value="Vattenskada">Vattenskada</option>
