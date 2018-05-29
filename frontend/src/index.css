@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
     box-sizing: border-box;
     margin: 0;
@@ -64,64 +63,3 @@ label  {
     font-family: SceneAH-Light, sans-serif;
     font-size: 16px;
 }
-=======
-body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    margin: 0 5%;
-    position: absolute;
-    top: 10%;
-}
-
-/* rubriker */
-@font-face {
-    font-family: ChronicleTextG1-Roman;
-    src: url(./fonts/ChronicleTextG1-Roman.otf);
-}
-
-/* brödtext */
-@font-face {
-    font-family: SceneAH-Medium;
-    src: url(./fonts/SceneAH-Medium.otf);
-}
-
-/* form font */
-@font-face {
-    font-family: SceneAH-Light;
-    src: url(./fonts/SceneAH-Light.otf);
-}
-
-h1 {
-  margin-bottom: 7px;
-}
-
-h1,
-h2 {
-    font-family: ChronicleTextG1-Roman, serif;
-    font-size: 45px;
-    color: #fff;
-    font-weight: initial;
-}
-
-p,
-strong {
-    font-family: SceneAH-Medium, sans-serif;
-    font-size: 16px;
-    color: #fff;
-}
-
-input,
-textarea,
-select,
-option,
-label  {
-    font-family: SceneAH-Light, sans-serif;
-    font-size: 16px;
-}
->>>>>>> besv16
