@@ -47,6 +47,7 @@ class ChosenCampus extends Component {
           <Header />
           <GradientBackground
             backgroundImage={BackgroundImage}
+            height={`650px`}
           />
           <div className="main-content">
             <div className="chosen-campus-container">
